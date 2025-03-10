@@ -5,8 +5,8 @@ goal = 0
 
 while goal < 2 and one_shot < 1:
 
-    num1 = random.randint(1, 6)
-    num2 = random.randint(1, 6)
+    num1 = random.randint(1,7)
+    num2 = random.randint(1,7)
     sum = num1 + num2
 
     if sum == 2 or sum == 3 or sum == 12:
