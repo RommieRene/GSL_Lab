@@ -4,7 +4,7 @@ one_shot = 0
 goal = 0
 
 while goal < 2 and one_shot < 1:
-
+    player = input('Press Enter to roll the dice')
     num1 = random.randint(1,6)
     num2 = random.randint(1,6)
     sum = num1 + num2
@@ -26,7 +26,7 @@ while goal < 2 and one_shot < 1:
     elif goal == 0 and sum == 7 or sum == 11:
         one_shot = one_shot + 1
 
-        print('the sum is ', sum, 'Player Lost')
+        print('the sum is ', sum, 'Player has no goal, Player Lost')
 
     elif goal == 1 and (sum == 7 or sum == 11):
         goal = goal + 1
