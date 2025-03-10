@@ -37,44 +37,39 @@ print("Choose a template for your story",
     "\nNumber 1 -  Hospital story",
     '\nNumber 2 - Camping trip',
     '\nNumber 3 - Magical castle adventure')
-choice = int(input("Writethe number fo your story: "))
+choice = int(input("Write the number fo your story: "))
 
 template = templates[choice - 1]
 
 data_of_story = {
     "Number" : int(input("Write a number: ")),
+    "Number2" : str(input("Write another number: ")),
     "Measure_of_time" : str(input("Write a measure of time (hours, days, years): ")),
     "Mode_of_Transportation" : str(input("Write a mode of transportation: ")),
     "Adjective" : str(input("Write an adjective: ")),
     "Adjective2" : str(input("Write another adjective: ")),
+    "Adjective3" : str(input("Write another adjective: ")),
+    "Adjective4" : str(input("Write another adjective: ")),
     "Noun" : str(input("Write a noun: ")),
-    "Color" : str(input("Write a color: ")),
-    "Part_of_the_Body" : str(input("Write a part of the body: ")),
-    "Verb" : str(input("Write a verb: ")),
-    "Number2" : str(input("Write another number: ")),
     "noun2" : str(input("Write another noun: ")),
     "noun3" : str(input("Write a noun: ")),
-    "Part_of_the_Body2" : str(input("Write another part of the body: ")),
-    "verb2" : str(input("Write another verb: ")),
     "noun4" : str(input("Write a noun: ")),
-    "Adjective3" : str(input("Write another adjective: ")),
+    "Noun5" : str(input("Write a noun: "))
+    "Color" : str(input("Write a color: ")),
+    "Verb_ing" : str(input("Write a verb ending in -ing: ")),
+    "Adverb" : str(input("Write an adverb: ")),
+    "Verb" : str(input("Write a verb: ")),
+    "verb2" : str(input("Write another verb: ")),
+    "Part_of_the_Body" : str(input("Write a part of the body: ")),
+    "Part_of_the_Body2" : str(input("Write another part of the body: ")),
     "Silly_Word" : str(input("Write a silly word: ")),
     "Proper_Noun" : str(input("Write a proper noun (person's name): ")),
     "Animal" : str(input("Write an animal: ")),
+    "Animal2" : str(input("Write another animal: ")),
     "Feeling" : str(input("Write a feeling: ")),
-    "Verb2" : str(input("Write another verb: ")),
-    "adjective2" : str(input("Write another adjective: ")),
-    "animal2" : str(input("Write another animal: ")),
-    "Adverb" : str(input("Write an adverb: ")),
     "Place" : str(input("Write a place: ")),
     "Magical_Creature" : str(input("Write a magical creature (plural): ")),
     "Room_in_House" : str(input("Write a room in a house: ")),
-    "Noun2" : str(input("Write another noun: ")),
-    "Noun3" : str(input("Write a plural noun: ")),
-    "Adjective4" : str(input("Write another adjective: ")),
-    "Noun4" : str(input("Write a plural noun: ")),
-    "Verb_ing" : str(input("Write a verb ending in -ing: ")),
-    "Noun5" : str(input("Write a noun: "))
 }
 
 story = template.format(**data_of_story)
