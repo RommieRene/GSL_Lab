@@ -5,8 +5,8 @@ goal = 0
 
 while goal < 2 and one_shot < 1:
     player = input('Press Enter to roll the dice')
-    num1 = random.randint(1,6)
-    num2 = random.randint(1,6)
+    num1 = random.randint(1, 6)
+    num2 = random.randint(1, 6)
     sum = num1 + num2
 
     if sum == 2 or sum == 3 or sum == 12:
@@ -14,7 +14,8 @@ while goal < 2 and one_shot < 1:
 
         print('the sum is ', sum, 'The Casino Wins')
 
-    elif goal == 0 and sum == 4 or sum == 5 or sum == 6 or sum == 8 or sum == 9 or sum == 10:
+    elif (goal == 0 and sum == 4
+          or sum == 5 or sum == 6 or sum == 8 or sum == 9 or sum == 10):
         goal = goal + 1
 
         print('the sum is ', sum, "goal is", goal)
