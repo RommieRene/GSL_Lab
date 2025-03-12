@@ -1,37 +1,55 @@
 import random
 
-one_shot = 0
-goal = 0
 
-while goal < 2 and one_shot < 1:
-    player = input('Press Enter to roll the dice')
-    num1 = random.randint(1, 6)
-    num2 = random.randint(1, 6)
-    sum = num1 + num2
+def diceOne():
+    diceOne = random.randint(1, 6)
+    return int(diceOne)
 
-    if sum == 2 or sum == 3 or sum == 12:
-        one_shot = one_shot + 1
 
-        print('the sum is ', sum, 'The Casino Wins')
+def diceTwo():
+    diceTwo = random.randint(1, 6)
+    return int(diceTwo)
 
-    elif (goal == 0 and sum == 4
-          or sum == 5 or sum == 6 or sum == 8 or sum == 9 or sum == 10):
-        goal = goal + 1
 
-        print('the sum is ', sum, "goal is", goal)
+def roll_the_dice(x, y) -> int:
+    sum_of_dice = int(y) + int(x)
+    return int(sum_of_dice)
 
-        if goal == 2:
-            print("GOAAAL Congratulations to the Player"
-                  "\n Player wins ")
 
-    elif goal == 0 and sum == 7 or sum == 11:
-        one_shot = one_shot + 1
+def player():
+    input('Press Enter to roll the dices')
+    return int(roll_the_dice(diceOne(), diceTwo()))
 
-        print('the sum is ', sum, 'Player has no goal, Player Lost')
 
-    elif goal == 1 and (sum == 7 or sum == 11):
-        goal = goal + 1
+def playing_rules():
+    one_shot = 0
+    goal = 0
 
-        print('the sum is ', sum, 'goal is ', goal, 'Player Wins ')
-    else:
-        break
+    while goal < 2 or one_shot < 1:
+
+        x = player()
+
+        if goal == 0 or goal == 1:
+            if x == 4 or x == 5 or x == 6 or x == 8 or x == 9 or x == 10:
+                goal = goal + 1
+                print('Sum of Dices:', x, "| goal is", goal)
+                if goal == 2:
+                    print("GOAAAL Player wins ")
+                    break
+            elif x == 2 or x == 3 or x == 12:
+                one_shot = one_shot + 1
+                print('Sum of Dices:', x, '| The Casino Wins')
+                break
+            elif goal == 0 and x == 7 or x == 11:
+                one_shot = one_shot + 1
+                print('Sum of Dices:', x, ' | Player has no goal, Lost')
+                break
+            elif goal == 1 and (x == 7 or x == 11):
+                goal = goal + 1
+                print('Sum of Dices:', x, '| goal is ', goal)
+                print('Player Wins')
+                break
+    return 'End Game'
+
+
+print(playing_rules())
