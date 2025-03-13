@@ -40,7 +40,7 @@ def playing_rules():
                 one_shot = one_shot + 1
                 print('Sum of Dices:', x, '| The Casino Wins')
                 break
-            elif goal == 0 and x == 7 or x == 11:
+            elif goal == 0 and (x == 7 or x == 11):
                 one_shot = one_shot + 1
                 print('Sum of Dices:', x, ' | Player has no goal, Lost')
                 break
