@@ -64,7 +64,7 @@ def story_one():
     is the {Data_story['Silly_Word']} {Data_story['Noun']}!
     """
 
-    print('\nStory One:', story)
+    print('Story One:\n', story)
 
 
 def story_two():
@@ -88,8 +88,9 @@ def story_two():
         "Noun2": v_input('Enter another noun: ', is_word=True)
     }
 
-    story = f"""This weekend I am going camping with
-    {Data_story['Proper_Noun']}
+    story = f"""
+    This weekend I am going
+    camping with {Data_story['Proper_Noun']}
     I packed my lantern, sleeping bag,
     and {Data_story['Noun']}
     I am so {Data_story['Adjective']} to
@@ -112,7 +113,7 @@ def story_two():
     stories and roast {Data_story['Noun2']} around the campfire!!
     """
 
-    print('\nStory Two:', story)
+    print('Story Two:\n', story)
 
 
 def story_three():
@@ -162,7 +163,7 @@ def story_three():
         a {Data_story['Adjective2']} {Data_story['Noun5']}!!
         """
 
-    print('\nStory Three:', story)
+    print('Story Three:\n', story)
 
 
 def start_game():
