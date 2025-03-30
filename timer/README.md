@@ -1,4 +1,4 @@
-#Timer 
+# Timer 
 
 program takes the time from the user as a timer and start to countdown in the terminal - each new countdown line appears after one second, not immediately
 
