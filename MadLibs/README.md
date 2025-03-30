@@ -11,4 +11,4 @@ The final story is read with the inserted words, often leading to hilarious resu
 
 #### About Code
 
-** v_input ** function is for verification of inputs (Verify Input)
+**v_input** function is for verification of inputs (Verify Input)
