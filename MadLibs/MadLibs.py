@@ -12,7 +12,7 @@ def v_input(prompt, is_number=False, is_word=False):
             if is_number and not value.isdigit():
                 raise ValueError('Please enter a valid number.')
             if is_word and not re.fullmatch(r"[A-Za-z\s]+", value):
-                raise ValueError('pecial and Numeric Chars are invalid')
+                raise ValueError('Special and Numeric Chars are invalid')
             return value
         except ValueError as e:
             print(f"Error: {e}")
