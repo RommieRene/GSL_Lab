@@ -1,4 +1,4 @@
-# Mad Libs
+## Mad Libs
 
 Mad Libs is a fun word game where players fill in blanks with random words (like nouns, adjectives, and verbs) to create a silly or unexpected story,
 
