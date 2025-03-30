@@ -8,3 +8,7 @@ The player should roll two dice. If the sum of both of them is 7 or 11 the playe
    ```bash
    git clone https://github.com/RommieRene/GSL_Lab/tree/main/Dice_Game
 
+2. go to your IDEA open the repository which you have cloned, Run the program and pres Enter to play,
+Read the rules of the game carfuly. 
+
+### Have a good gameplay :) good luck.
