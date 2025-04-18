@@ -28,4 +28,4 @@ ps. The Stories will be generated randomly, there are 3 stories
 
 **starting** function uses randint function from random Lib and picks the story for user 
 
-### have a good gameplay, :smile:  Enjoy
+### have a good gameplay, :smile:  Happy Gaming 
